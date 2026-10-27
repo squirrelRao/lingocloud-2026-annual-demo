@@ -7,7 +7,9 @@ For fandom, beyond language
 
 ## 查看
 
-GitHub Pages 启用后，打开仓库右侧 **Deployments / github-pages** 中的访问地址；也可下载本仓库并直接打开 `index.html`。
+[在线体验 Demo](https://squirrelrao.github.io/lingocloud-2026-annual-demo/)
+
+也可下载本仓库并直接打开 `index.html`。
 
 支持网页模式，以及 iOS、Android、鸿蒙的 APP 页面预览。APP 预览可用 `?preview=app&platform=ios`（或 android、harmony）进入。
 
