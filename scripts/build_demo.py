@@ -18,7 +18,7 @@ def main():
     parser.add_argument('--output',type=Path,help='Defaults to PROJECT/index.html')
     args=parser.parse_args();result=assemble(args.project);out=args.output or args.project/'index.html'
     out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(result)
-    inkcss=(args.project/'source/ink.css').read_text();inkjs=(args.project/'source/ink.js').read_text()
+    inkcss=(args.project/'source/ink.css').read_text();inkjs=(args.project/'source/ink-turn.js').read_text()+'\n'+(args.project/'source/ink.js').read_text()
     ink=result.decode().replace('</style>',inkcss+'</style>',1).replace('<body class="theme-paper">','<body class="theme-paper ink-edition">',1)
     ink=ink.replace('data-edition-link aria-current="page">暖光星空','data-edition-link>暖光星空').replace('data-edition-link>水墨纸书 ↗','data-edition-link aria-current="page">水墨纸书')
     ink=ink.replace('<script>'+ (args.project/'source/editions.js').read_text(),'<script>'+inkjs+'</script><script>'+(args.project/'source/editions.js').read_text(),1)

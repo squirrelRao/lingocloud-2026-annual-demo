@@ -51,3 +51,5 @@ Node 使用支持现代 JavaScript 的版本。两组检查覆盖数据、模型
 ## 水墨纸书版本
 
 顶部「水墨纸书」入口切换。完整报告引擎共用；独立纸面封装、山水书封、书册目录、装订与纸张层次、前后翻页动效。支持按钮、方向键与触屏横划；减少动态效果时静态切页。年度卡采用墨色纸面并保持同图预览／保存。source/ink.css、ink.js是独立表现层，source/editions.js负责跨风格有效状态传递；构建脚本同时生成index.html和ink.html。新增检查：node tests/verify-ink.mjs。
+
+仿真翻页使用移动斜折线、纸面裁切和镜像纸背，配合低透明透墨、曲面卷边明暗及投影；前进翻起、后退展开，持续约1秒。几何检查：node tests/verify-paper-fold.mjs。
