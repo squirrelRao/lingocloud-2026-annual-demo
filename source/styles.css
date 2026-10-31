@@ -521,3 +521,5 @@ body.annual-lightbox-open{overflow:hidden!important}
 .annual-lightbox-scroll{min-width:0;min-height:0;overflow:auto;overscroll-behavior:contain;padding:24px max(16px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));scrollbar-width:thin;touch-action:pan-x pan-y;box-sizing:border-box}
 .annual-lightbox-scroll img{display:block;width:min(960px,100%);height:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;cursor:zoom-out;touch-action:pan-x pan-y;user-select:none;-webkit-user-select:none;box-shadow:0 12px 48px #0005}
 @media(max-width:600px){.annual-lightbox-scroll{padding:12px max(8px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left))}}
+
+.edition-links{display:flex;gap:3px;border:1px solid var(--line);padding:3px;border-radius:5px}.edition-links a{padding:5px 10px;font-size:11px;white-space:nowrap}.edition-links a[aria-current=page]{background:var(--ink);color:var(--card)}

@@ -7,7 +7,7 @@ For fandom, beyond language
 
 ## 查看
 
-[在线体验 Demo](https://squirrelrao.github.io/lingocloud-2026-annual-demo/)
+[暖光星空版](https://squirrelrao.github.io/lingocloud-2026-annual-demo/) · [水墨纸书版](https://squirrelrao.github.io/lingocloud-2026-annual-demo/ink.html)
 
 也可下载本仓库并直接打开 `index.html`。
 
@@ -47,3 +47,7 @@ Node 使用支持现代 JavaScript 的版本。两组检查覆盖数据、模型
 ## 年度卡示例
 
 ![年度卡示例](preview.png)
+
+## 水墨纸书版本
+
+顶部「水墨纸书」入口切换。完整报告引擎共用；独立纸面封装、山水书封、书册目录、装订与纸张层次、前后翻页动效。支持按钮、方向键与触屏横划；减少动态效果时静态切页。年度卡采用墨色纸面并保持同图预览／保存。source/ink.css、ink.js是独立表现层，source/editions.js负责跨风格有效状态传递；构建脚本同时生成index.html和ink.html。新增检查：node tests/verify-ink.mjs。
